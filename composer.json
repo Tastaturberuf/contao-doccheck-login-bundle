@@ -1,0 +1,31 @@
+{
+    "name": "tastaturberuf/contao-doccheck-login-bundle",
+    "type": "contao-bundle",
+    "description": "With this Contao bundle you can implement your DocCheck login",
+    "homepage": "https://github.com/Tastaturberuf/contao-doccheck-login-bundle",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Tastaturberuf",
+            "role": "Developer",
+            "homepage": "https://github.com/tastaturberuf"
+        },
+        {
+            "name": "Andreas Kroll",
+            "role": "Initial sponsor",
+            "homepage": "https://github.com/akroii"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "contao/core-bundle": "^4.9"
+    },
+    "extra": {
+        "contao-manager-plugin": "Tastaturberuf\\ContaoDoccheckLoginBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tastaturberuf\\ContaoDoccheckLoginBundle\\": "src/"
+        }
+    }
+}

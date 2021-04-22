@@ -1,0 +1,12 @@
+services:
+
+    Tastaturberuf\ContaoDoccheckLoginBundle\Controller\DoccheckLoginController:
+        arguments:
+            - '@contao.security.frontend_user_provider'
+            - '@contao.security.user_checker'
+            - '@security.token_storage'
+            - '@event_dispatcher'
+            - '@logger'
+            - '@contao.security.authentication_success_handler'
+        tags:
+            - { name: contao.frontend_module, category: 'application', type: !php/const Tastaturberuf\ContaoDoccheckLoginBundle\Controller\DoccheckLoginController::NAME }

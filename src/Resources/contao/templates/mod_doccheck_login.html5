@@ -1,0 +1,16 @@
+<?php $this->extend('block_unsearchable') ?>
+
+<?php $this->block('content') ?>
+<iframe
+    align="left"
+    frameborder="0"
+    scrolling="no"
+    width="467"
+    height="231"
+    name="dc_login_iframe"
+    id="dc_login_iframe"
+    src="<?=$this->url?>"
+>
+    <a href="<?=$this->url?>" target="_blank">LOGIN</a>
+</iframe>
+<?php $this->endblock() ?>
