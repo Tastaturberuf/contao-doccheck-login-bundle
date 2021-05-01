@@ -26,7 +26,7 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['doccheck_redirect'] =
     'exclude'                 => true,
     'inputType'               => 'pageTree',
     'foreignKey'              => 'tl_page.title',
-    'eval'                    => array('fieldType'=>'radio'),
+    'eval'                    => ['fieldType'=>'radio','tl_class'=>'w50 widget cbx'],
     'sql'                     => "int(10) unsigned NOT NULL default 0",
     'relation'                => array('type'=>'hasOne', 'load'=>'lazy')
 ];
