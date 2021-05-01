@@ -15,6 +15,12 @@ With this Contao bundle you can easily implement the [DocCheck](https://www.docc
 
 There is a new frontend module under the application section called **DocCheck login**.
 
+## Usage
+1. Go to "member" in backned
+2. Choose or create a member which has a DocCheck account. Make sure, that "allow login" is enabled!
+3. Set DocCheck checkbox in "DocCheck-Login"-Area
+4. Create module "DocCheck-Login", fill in all nessessary data and place it on your preferred site.
+
 ## Important
 
 In the DocCheck login management you must set the target url to the frontend site where the module is placed.
