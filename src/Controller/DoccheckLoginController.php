@@ -101,6 +101,14 @@ class DoccheckLoginController extends AbstractFrontendModuleController
 
     protected function getResponse(Template $template, ModuleModel $model, Request $request): ?Response
     {
+        $jumpTo = PageModel::findByPk($model->doccheck_jump_to) ?? $request->attributes->get('_route_params')['pageModel'];
+
+        // set the target path if not available see #6
+        if ( !$request->request->has('_target_path') )
+        {
+            $request->request->set('_target_path', base64_encode($jumpTo->getFrontendUrl()));
+        }
+
         if ( $this->isValidDoccheckRequest() )
         {
             if ( null === $memberModel = MemberModel::findOneBy('id', $model->doccheck_user) )
@@ -110,7 +118,7 @@ class DoccheckLoginController extends AbstractFrontendModuleController
 
             $this->loginUser($memberModel->username, $request);
 
-            throw new RedirectResponseException(PageModel::findByPk($model->doccheck_jump_to)->getFrontendUrl());
+            throw new RedirectResponseException($jumpTo->getFrontendUrl());
         }
 
         $template->url = sprintf(self::URL,
