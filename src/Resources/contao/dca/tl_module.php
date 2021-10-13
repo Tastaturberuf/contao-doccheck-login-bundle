@@ -107,7 +107,7 @@ use Tastaturberuf\ContaoDoccheckLoginBundle\Controller\DoccheckLoginController;
                 'foreignKey' => 'tl_page.title',
                 'eval'       =>
                 [
-                    'mandatory' => true,
+                    'mandatory' => false,
                     'fieldType' => 'radio',
                     'tl_class'  => 'clr w50'
                 ],
