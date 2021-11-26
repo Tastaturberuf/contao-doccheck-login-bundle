@@ -2,9 +2,6 @@
 
 <?php $this->block('content') ?>
 <iframe
-    align="left"
-    frameborder="0"
-    scrolling="no"
     width="467"
     height="231"
     name="dc_login_iframe"
