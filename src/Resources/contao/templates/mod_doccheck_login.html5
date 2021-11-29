@@ -8,6 +8,5 @@
     id="dc_login_iframe"
     src="<?=$this->url?>"
 >
-    <a href="<?=$this->url?>" target="_blank">LOGIN</a>
 </iframe>
 <?php $this->endblock() ?>
