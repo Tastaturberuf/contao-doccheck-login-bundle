@@ -55,4 +55,4 @@ search for `tastaturberuf/contao-doccheck-login-bundle`
 Many thanks to the initial sponsor Andreas Kroll @akroii
 
 ## Maintainer
-[Tastaturberuf](https://tastaturberuf.de) **with ♥ and Contao**
+[Andreas Kroll](https://github.com/akroii) & [Tastaturberuf](https://tastaturberuf.de) **with ♥ and Contao**
