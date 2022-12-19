@@ -118,7 +118,7 @@ class DoccheckLoginController extends AbstractFrontendModuleController
 
             $this->loginUser($memberModel->username, $request);
 
-            throw new RedirectResponseException($jumpTo->getFrontendUrl());
+            throw new RedirectResponseException($jumpTo->getFrontendUrl().'?'.\Environment::get('queryString'));
         }
 
         $template->url = sprintf(self::URL,
