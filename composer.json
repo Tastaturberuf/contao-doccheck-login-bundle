@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "php": "^7.2 || ^8.0",
-        "contao/core-bundle": "^4.9"
+        "php": "^8.1",
+        "contao/core-bundle": "^4.13 || ^5.0"
     },
     "extra": {
         "contao-manager-plugin": "Tastaturberuf\\ContaoDoccheckLoginBundle\\ContaoManager\\Plugin"
