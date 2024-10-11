@@ -99,7 +99,7 @@ class DoccheckLoginController extends AbstractFrontendModuleController
     }
 
 
-    protected function getResponse(Template $template, ModuleModel $model, Request $request): ?Response
+    protected function getResponse(Template $template, ModuleModel $model, Request $request): Response
     {
         $jumpTo = PageModel::findByPk($model->doccheck_jump_to) ?? $request->attributes->get('_route_params')['pageModel'];
 
